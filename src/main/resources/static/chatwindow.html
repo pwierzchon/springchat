@@ -1,0 +1,17 @@
+<div ng-controller="chatController">
+    <h3>Chat window</h3>
+
+    <div id="chatbox" class="chatbox">
+        <div class="message" ng-repeat="x in messages">
+            <p>{{x.user}} <i> ({{ x.date | date:'yyyy-MM-dd HH:mm:ss' }}): </i></p>
+            <p>{{x.message}}</p>
+        </div>
+    </div>
+    <form ng-submit="addMessage()" >
+        <div class="form-group">
+            <label>Message</label>
+            <input type="text" ng-model="message.text" class="form-control"/>
+        </div>
+        <input class="btn btn-success" type="submit" value="Send"/>
+    </form>
+</div>

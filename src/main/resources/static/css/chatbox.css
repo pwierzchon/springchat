@@ -1,0 +1,11 @@
+/* 
+    Created on : 2017-07-02, 22:53:09
+    Author     : Destino
+*/
+
+.chatbox{
+    height: 65%; 
+    width: 100%;
+    overflow-y: auto; 
+    word-wrap: break-word;
+}
